@@ -1,0 +1,13 @@
+.subreddit-card {
+    padding-right: var(--spacing-2);
+}
+
+.subreddit-card h2 {
+    margin-top: 0;
+    color: var(--color-text-header);
+}
+
+.subreddits-list {
+    list-style: none;
+    padding: 0;
+}
