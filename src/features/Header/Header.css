@@ -1,0 +1,50 @@
+header .logo {
+    font-weight: bold;
+    padding: var(--spacing-1) 0;
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+  }
+  
+  header {
+    display: flex;
+    color: var(--color-branding);
+    background: var(--color-foreground);
+    height: 64px;
+    padding: 0 var(--spacing-5);
+  }
+  
+  header .logo-icon {
+    grid-column: 2/3;
+    margin-right: var(--spacing-1);
+    margin-top: var(--spacing-1);
+    font-size: 3rem;
+  }
+  
+  header span {
+    color: var(--color-text-header);
+  }
+  
+  .search {
+    display: flex;
+    margin-left: 6rem;
+    align-items: center;
+  }
+  
+  .search input {
+    background: var(--color-background-secondary);
+    border: none;
+    outline: none;
+    padding: var(--spacing-1) var(--spacing-2);
+    font-size: 16px;
+    height: max-content;
+    border-radius: var(--radius);
+  }
+  
+  .search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    font-size: 1.5rem;
+  }

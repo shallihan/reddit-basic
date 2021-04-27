@@ -6,11 +6,11 @@ import './Header.css';
 const Header = () => {
     return (
         <header>
-            <div>
-                <FaReddit />
+            <div className="logo">
+                <FaReddit className="logo-icon"/>
                 <p>Reddit<span>basic</span></p>
             </div>
-            <form>
+            <form className="search">
                 <input type="text" placeholder="Search" />
                 <button type="submit"><HiSearch /></button>
             </form>
