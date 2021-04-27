@@ -32,3 +32,13 @@
   --radius: 15px;
   --radius-2: 25px;
 }
+
+html,
+body {
+  background: var(--color-background);
+  color: var(--color-text-body);
+}
+
+p {
+  margin: 0;
+}
