@@ -66,10 +66,7 @@ const Post = (props) => {
         if (post.loadingComments) {
           return (
             <div>
-              <Skeleton />
-              <Skeleton />
-              <Skeleton />
-              <Skeleton />
+              <Skeleton count={3}/>
             </div>
           );
         }

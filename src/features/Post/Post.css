@@ -3,7 +3,7 @@
 }
 
 .post-container {
-  width: 100%;
+  width: 80%;
 }
 
 .post-details {
@@ -21,13 +21,13 @@
   font-weight: bold;
 }
 
-.post-image-container {
+.image-container {
   width: 100%;
   overflow: hidden;
   border-radius: var(--radius-2);
 }
 
-.post-image-container .post-image {
+.image-container .post-image {
   width: 100%;
 }
 
@@ -37,11 +37,11 @@
   color: var(--color-text-header);
 }
 
-.post-votes-container {
+.voting-container {
   margin-right: var(--spacing-3);
 }
 
-.post-votes-container {
+.voting-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,3 +112,5 @@
 .showing-comments {
   color: var(--color-branding);
 }
+
+

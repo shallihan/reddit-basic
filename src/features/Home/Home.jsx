@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-/* import { AnimatedList } from 'react-animated-list'; */
+import { AnimatedList } from 'react-animated-list';
 import Post from '../Post/Post';
+import PostLoading from '../Post/PostLoading';
 import './Home.css';
 import {
   fetchPosts,
@@ -9,6 +10,7 @@ import {
   fetchComments,
   setSearchTerm
 } from '../../store/redditSlice';
+import getRandomNumber from '../../utilities/getRandomNumber';
 
 const Home = () => {
   const reddit = useSelector((state) => state.reddit);
@@ -28,14 +30,14 @@ const Home = () => {
   return getComments;
 };
 
-/* Work on Post Loading
+
 if (isLoading) {
   return (
     <AnimatedList animation="zoom">
       {Array(getRandomNumber(3, 10)).fill(<PostLoading />)}
     </AnimatedList>
   );
-} */
+}
 
 if (error) {
   return (
