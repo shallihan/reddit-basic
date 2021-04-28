@@ -6,7 +6,7 @@ import {
     TiArrowUpOutline,
     TiArrowDownOutline,
     TiMessage,
-  } from 'react-icons/ti';
+  } from 'react-icons/ti'; 
 
   const PostLoading = () => {
       return (
