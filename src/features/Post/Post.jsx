@@ -4,7 +4,7 @@ import {
     TiArrowDownOutline,
     TiArrowDownThick,
     TiMessage,
-    TiArrowBackOutline,
+    TiArrowUpOutline,
   } from 'react-icons/ti';
 import './Post.css';
 import moment from 'moment';
@@ -33,7 +33,7 @@ const Post = (props) => {
         if( voteValue === 1) {
             return <TiArrowUpThick className="icon-action"/>
         } 
-        return <TiArrowBackOutline className="icon-action"/>
+        return <TiArrowUpOutline className="icon-action"/>
     };
 
     const renderDownVote = () => {
