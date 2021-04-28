@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import Header from './features/Header/Header';
 import Subreddits from './features/Subreddits/Subreddits';
 import Home from './features/Home/Home';
