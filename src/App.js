@@ -8,12 +8,12 @@ function App() {
   return (
     <div className="App">
             <Header />
-            <main>
-              <Home />
-            </main>
-            <aside>
+            <div className="subreddit-bar">
               <Subreddits />
-            </aside>
+            </div>
+            <div className="main-feed">
+              <Home />
+            </div>
     </div>
   );
 }

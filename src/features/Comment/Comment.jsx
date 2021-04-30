@@ -8,12 +8,12 @@ const Comment = (props) => {
     return (
         <div className="comment">
             <div className="comment-metadata">
-            <p className="comment-author">{comment.author}</p>
-            <p className="comment-created-time">{moment.unix(comment.created_utc).fromNow()}</p>
+                <p className="comment-author">{comment.author}</p>
+                <p className="comment-created-time">{moment.unix(comment.created_utc).fromNow()}</p>
             </div>
-            <ReactMarkdown source={comment.body} />
+            <ReactMarkdown>{comment.body}</ReactMarkdown>
         </div>
     );
-}
+};
 
 export default Comment;

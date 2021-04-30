@@ -1,12 +1,14 @@
 .post-wrapper {
   display: flex;
+  padding: var(--spacing-3);
 }
 
 .post-container {
-  width: 80%;
+  width: 100%;
 }
 
-.post-details {
+.details-container {
+  width: 60%;
   margin-top: var(--spacing-2);
   border-top: 1px solid var(--color-border);
   padding-top: var(--spacing-1);
@@ -16,13 +18,13 @@
   align-items: center;
 }
 
-.post-details .author-username {
+.details-container .author-username {
   color: var(--color-branding);
   font-weight: bold;
 }
 
 .image-container {
-  width: 100%;
+  width: 60%;
   overflow: hidden;
   border-radius: var(--radius-2);
 }
@@ -92,7 +94,8 @@
 }
 
 .icon-action-button:hover {
-  background: var(--color-on-hover);
+  background: var(--color-branding-transparent);
+  color: white;
 }
 
 .post-comments-container {
@@ -100,8 +103,12 @@
   align-items: center;
 }
 
+.post-time-created {
+  margin: var(--spacing-1) 0;
+}
+
 .post-comments-container .icon-action {
-  margin-right: var(--spacing-0);
+  margin: var(--spacing-1);
 }
 
 .author-details {
@@ -113,4 +120,8 @@
   color: var(--color-branding);
 }
 
+.rendered-comments {
+  margin: var(--spacing-2) 0;
+  width: 60%;
+}
 

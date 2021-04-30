@@ -66,7 +66,7 @@ const Post = (props) => {
         if (post.loadingComments) {
           return (
             <div>
-              <Skeleton count={3}/>
+              <Skeleton count={3} height={25}/>
             </div>
           );
         }
@@ -116,7 +116,8 @@ const Post = (props) => {
                     </div>
 
                     <div className="details-container">
-                        <span>{moment.unix(post.created_utc).fromNow()}</span>
+                        <span className="author-username">{post.author}</span>
+                        <span class="post-time-created">{moment.unix(post.created_utc).fromNow()}</span>
                         <span class="post-comments-container">
                             <button 
                             type="button"
@@ -127,7 +128,9 @@ const Post = (props) => {
                             ><TiMessage className="icon-action" /></button>
                         </span>
                     </div>
+                    <div className="rendered-comments">
                     {renderComments()}
+                    </div>
                 </div>
             </div>
         </Card>

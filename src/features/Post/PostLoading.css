@@ -1,0 +1,12 @@
+.post-votes-value-loading {
+    width: 2ch !important;
+  }
+  
+  .post {
+    display: flex;
+    margin-bottom: var(--spacing-4);
+    margin-left: var(--spacing-4);
+    padding: var(--spacing-3);
+    transition: box-shadow 0.1s ease-in;
+    color: var(--color-text-secondary);
+  }
