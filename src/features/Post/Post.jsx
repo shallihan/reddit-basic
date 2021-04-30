@@ -85,6 +85,7 @@ const Post = (props) => {
       };
 
 
+
     return(
         <article key={post.id}>
         <Card>
@@ -111,7 +112,7 @@ const Post = (props) => {
                     <h3 className="post-title">{post.title}</h3>
 
                     <div className="image-container">
-                        <img className="post-image" src={post.url}/>
+                        <img className="post-image" src={post.url} alt="" />
                     </div>
 
                     <div className="details-container">
