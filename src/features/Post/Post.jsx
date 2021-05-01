@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {
-    TiArrowUpThick,
-    TiArrowDownOutline,
-    TiArrowDownThick,
-    TiMessage,
-    TiArrowUpOutline,
+    FaArrowCircleUp,
+    FaArrowCircleDown,
+    FiArrowUpCircle,
+    FiArrowDownCircle,
+    TiMessage
   } from 'react-icons/ti';
 import './Post.css';
 import moment from 'moment';
@@ -31,16 +31,16 @@ const Post = (props) => {
 
     const renderUpVote = () => {
         if( voteValue === 1) {
-            return <TiArrowUpThick className="icon-action"/>
+            return <FaArrowCircleUp className="icon-action"/>
         } 
-        return <TiArrowUpOutline className="icon-action"/>
+        return <FiArrowUpCircle className="icon-action"/>
     };
 
     const renderDownVote = () => {
         if (voteValue === -1) {
-          return <TiArrowDownThick className="icon-action" />;
+          return <FaArrowCircleDown className="icon-action" />;
         }
-        return <TiArrowDownOutline className="icon-action" />;
+        return <FiArrowDownCircle className="icon-action" />;
     };
 
     const getVoteType = () => {
