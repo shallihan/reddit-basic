@@ -6,11 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Getting Started
 
-To start you'll need to install some software and a few packages
+To start you'll need to install 
 
 * Node.js / npm
 
 
+### React libraries and packages used
 * Create-React-App
 * Redux
 * Redux-Toolkit

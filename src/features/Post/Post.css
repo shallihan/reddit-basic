@@ -8,7 +8,7 @@
 }
 
 .details-container {
-  width: 60%;
+  width: 100%;
   margin-top: var(--spacing-2);
   border-top: 1px solid var(--color-border);
   padding-top: var(--spacing-1);
@@ -24,7 +24,7 @@
 }
 
 .image-container {
-  width: 60%;
+  width: 100%;
   overflow: hidden;
   border-radius: var(--radius-2);
 }
@@ -122,6 +122,20 @@
 
 .rendered-comments {
   margin: var(--spacing-2) 0;
-  width: 60%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .image-container {
+    width: 60%;
+  }
+
+  .details-container {
+    width: 60%;
+  }
+
+  .rendered-comments {
+    width: 60%;
+  }
 }
 
