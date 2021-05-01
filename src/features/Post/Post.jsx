@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import {
-    FaArrowCircleUp,
-    FaArrowCircleDown,
-    FiArrowUpCircle,
-    FiArrowDownCircle,
-    TiMessage
-  } from 'react-icons/ti';
+  FiArrowUpCircle,
+  FiArrowDownCircle,
+  FiMessageSquare
+} from 'react-icons/fi';
+import {
+  FaArrowCircleUp,
+  FaArrowCircleDown
+} from 'react-icons/fa';
 import './Post.css';
 import moment from 'moment';
 import Skeleton from 'react-loading-skeleton';
@@ -125,7 +127,7 @@ const Post = (props) => {
                                 post.showingComments && 'showing-comments'
                               }`}
                             onClick={() => onToggleComments(post.permalink)}
-                            ><TiMessage className="icon-action" /></button>
+                            ><FiMessageSquare className="icon-action" /></button>
                         </span>
                     </div>
                     <div className="rendered-comments">
