@@ -9,7 +9,7 @@
 
 .details-container {
   width: 100%;
-  margin-top: var(--spacing-2);
+  margin-top: var(--spacing-1);
   border-top: 1px solid var(--color-border);
   padding-top: var(--spacing-1);
   font-size: 0.75rem;
@@ -131,6 +131,7 @@
   }
 
   .details-container {
+    margin-top: var(--spacing-2);
     width: 60%;
   }
 
