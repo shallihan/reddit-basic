@@ -4,21 +4,50 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Getting Started
+## ⚙️ Quick Start
 
-To start you'll need to install 
+```
+# Install dependencies
+npm install
 
-* Node.js / npm
+# Serve on localhost:3000
+npm run start
 
+# Build for production
+npm run build
+```
 
-### React libraries and packages used
-* Create-React-App
-* Redux
-* Redux-Toolkit
+## 🔌 Installation
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+
+#### Clone repository
+```
+# Create folder for repository
+mkdir redditBasic
+
+# Clone repository
+git clone https://github.com/smhallihan/redditbasic redditBasic
+
+# Navigate to cloned repository
+cd redditBasic
+```
+
+#### Client Start-up
+
+```
+# Install client dependencies
+npm install
+
+# Start client on localhost:3000
+npm start
+```
+
+## 🧰 Libraries & Packages Used
+
+* React Icons
 * Moment.js
-* React-Animated-List
-* React-Icons
-* React-Loading-Skeleton
-* React-Markdown
-
+* React Loading Skeleton
+* React Markdown
+* React Animated List
 
